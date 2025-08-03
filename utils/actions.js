@@ -22,6 +22,7 @@ export async function sendEmail(validatedData) {
       from: "Portefølje <" + process.env.SENDER_EMAIL + ">",
       to: process.env.CONTACT_EMAIL || "",
       subject: "Ny melding fra kontaktskjema",
+      replyTo: email,
       react: EmailTemplate({
         name,
         email,

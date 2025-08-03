@@ -25,27 +25,27 @@ export default function Hero() {
         <div className="max-w-4xl">
           {/* Simplified Profile Image with Soft Rounded Corners */}
           <div className="relative mb-8 flex justify-center">
-            <div className="relative group">
-              <div className="w-48 md:w-64 aspect-square relative rounded-lg overflow-hidden shadow-xl transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+            <div className="relative group active:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+              <div className="w-48 md:w-64 aspect-square relative rounded-lg overflow-hidden shadow-xl transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] group-active:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
                 <Image
                   src={heroImage || "/placeholder.svg"}
                   alt="Sivert Bjørnerås"
                   placeholder="blur"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105 group-active:scale-105"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-base-content">
             Hei, jeg er{" "}
             <span className="font-extrabold relative group">
-              <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 via-red-500 via-amber-500 via-green-500 via-blue-500 to-purple-500 bg-[length:400%] opacity-0 group-hover:opacity-100 animate-gradient-x bg-clip-text text-transparent transition-all duration-300">
+              <span className="absolute inset-0 bg-gradient-to-r from-primary via-info via-error via-warning via-success via-primary to-purple-500 bg-[length:400%] opacity-0 group-hover:opacity-100 group-active:opacity-100 animate-gradient-x bg-clip-text text-transparent transition-all duration-300">
                 Sivert!
               </span>
-              <span className="relative group-hover:opacity-0 transition-opacity duration-300">
+              <span className="relative group-hover:opacity-0 group-active:opacity-0 transition-opacity duration-300">
                 Sivert!
               </span>
             </span>
@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
               href="#projects"
-              className="btn btn-primary btn-lg transition-colors hover:shadow-xl hover:shadow-primary/20"
+              className="btn btn-primary btn-lg transition-colors hover:shadow-xl active:shadow-xl hover:shadow-primary/20 active:shadow-primary/20"
             >
               Se mine prosjekter
             </Link>
@@ -70,14 +70,14 @@ export default function Hero() {
             <a
               href="https://github.com/sivertbjo"
               target="_blank"
-              className="text-base-content/60 hover:text-secondary transition-colors hover:shadow-glow"
+              className="text-base-content/60 hover:text-secondary active:text-secondary transition-colors hover:shadow-glow active:shadow-glow"
             >
               <Github className="h-6 w-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/sivert-bj%C3%B8rner%C3%A5s"
               target="_blank"
-              className="text-base-content/60 hover:text-secondary transition-colors hover:shadow-glow"
+              className="text-base-content/60 hover:text-secondary active:text-secondary transition-colors hover:shadow-glow active:shadow-glow"
             >
               <Linkedin className="h-6 w-6" />
             </a>

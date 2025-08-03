@@ -54,7 +54,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow"
+              className="card bg-base-300 shadow-xl hover:shadow-2xl transition-shadow"
             >
               <figure className="relative h-48 overflow-hidden">
                 <Image

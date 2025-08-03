@@ -2,7 +2,7 @@ import { Code, Palette, Zap } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="py-20 bg-base-100">
+    <section className="py-20 bg-gradient-to-b from-base-100 to-base-200">
       <div className="container mx-auto px-4">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
           <div className="space-y-6">

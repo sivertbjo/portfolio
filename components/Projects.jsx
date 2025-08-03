@@ -36,7 +36,10 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-20 bg-base-200" id="projects">
+    <section
+      className="py-20  bg-gradient-to-b from-base-200 to-neutral"
+      id="projects"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-base-content">

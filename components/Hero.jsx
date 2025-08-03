@@ -17,7 +17,7 @@ export default function Hero() {
   if (!mounted) return null;
 
   return (
-    <div className="hero min-h-screen bg-gradient-to-br from-base-300 via-primary to-base-300 relative overflow-hidden">
+    <div className="hero min-h-screen bg-gradient-to-br from-base-300 via-neutral to-base-300 relative overflow-hidden">
       {/* Canvas Animation Background */}
       <AnimatedBackground />
 
@@ -26,7 +26,7 @@ export default function Hero() {
           {/* Simplified Profile Image with Soft Rounded Corners */}
           <div className="relative mb-8 flex justify-center">
             <div className="relative group">
-              <div className="w-48 md:w-64 aspect-square relative rounded-lg overflow-hidden border-4 border-primary/30 shadow-xl transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+              <div className="w-48 md:w-64 aspect-square relative rounded-lg overflow-hidden shadow-xl transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(99,102,241,0.4)]">
                 <Image
                   src={heroImage || "/placeholder.svg"}
                   alt="Sivert Bjørnerås"
@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
               href="#projects"
-              className="btn btn-primary btn-lg transition-colors hover:shadow-xl hover:shadow-lime-400/20"
+              className="btn btn-primary btn-lg transition-colors hover:shadow-xl hover:shadow-primary/20"
             >
               Se mine prosjekter
             </Link>

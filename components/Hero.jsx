@@ -149,12 +149,14 @@ export default function Hero() {
             <a
               href="https://github.com/sivertbjo"
               className="text-base-content/60 hover:text-primary transition-colors"
+              aria-label="GitHub Profile"
             >
               <Github className="h-6 w-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/sivertbjorneras/"
               className="text-base-content/60 hover:text-primary transition-colors"
+              aria-label="LinkedIn Profile"
             >
               <Linkedin className="h-6 w-6" />
             </a>

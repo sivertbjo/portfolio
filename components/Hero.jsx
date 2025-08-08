@@ -136,14 +136,14 @@ export default function Hero() {
             Moderne webutvikling for håndverkere og små bedrifter som ønsker en enkel og effektiv nettside.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Link
-              href="#projects"
-              className="btn btn-primary btn-lg hover:bg-secondary hover:text-primary-content transition-colors"
-            >
-              Se mine prosjekter
-            </Link>
-          </div>
+         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+  <Link
+    href="#projects"
+    className="btn btn-primary btn-lg hover:bg-secondary hover:text-primary-content transition-colors"
+  >
+    Se mine prosjekter
+  </Link>
+</div>
 
           <div className="flex justify-center space-x-6">
             <a

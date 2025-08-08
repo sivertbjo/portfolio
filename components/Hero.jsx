@@ -25,7 +25,7 @@ export default function Hero() {
     : []
 
   return (
-    <div className="hero min-h-screen bg-gradient-to-br from-base-300 via-primary to-base-300 relative overflow-hidden">
+    <div className="hero min-h-screen bg-gradient-to-br from-base-300 via-base-100 to-base-300 relative overflow-hidden">
       {/* Canvas Animation Background */}
       <AnimatedBackground />
 

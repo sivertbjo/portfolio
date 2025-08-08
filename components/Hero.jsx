@@ -124,8 +124,16 @@ export default function Hero() {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-base-content">
-            Hei, jeg er <span className="font-extrabold text-primary">Sivert!</span>
+           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-base-content">
+            Hei, jeg er{" "}
+            <span className="font-extrabold relative group">
+              <span className="absolute inset-0 bg-gradient-to-r from-primary via-info via-error via-warning via-success via-primary to-purple-500 bg-[length:400%] opacity-0 group-hover:opacity-100 group-active:opacity-100 animate-gradient-x bg-clip-text text-transparent transition-all duration-300">
+                Sivert!
+              </span>
+              <span className="relative group-hover:opacity-0 group-active:opacity-0 transition-opacity duration-300">
+                Sivert!
+              </span>
+            </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-base-content/80 mb-4">
@@ -137,12 +145,12 @@ export default function Hero() {
           </p>
 
          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-  <Link
-    href="#projects"
-    className="btn btn-primary btn-lg hover:bg-secondary hover:text-primary-content transition-colors"
-  >
-    Se mine prosjekter
-  </Link>
+    <Link
+              href="#projects"
+              className="btn btn-primary btn-lg transition-colors hover:shadow-xl active:shadow-xl hover:shadow-primary/20 active:shadow-primary/20"
+            >
+              Se mine prosjekter
+            </Link>
 </div>
 
           <div className="flex justify-center space-x-6">

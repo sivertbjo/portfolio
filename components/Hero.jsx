@@ -137,11 +137,11 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-base-content/80 mb-4">
-            Fullstack utvikler som skaper moderne nettsider og digitale opplevelser
+             .. og jeg lager moderne nettsider og digitale opplevelser
           </p>
 
           <p className="text-lg mb-8 text-base-content/70 max-w-2xl mx-auto">
-            Moderne webutvikling for håndverkere og små bedrifter som ønsker en enkel og effektiv nettside.
+           Webutvikling for håndverkere og små bedrifter som ønsker en enkel og effektiv nettside.
           </p>
 
          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

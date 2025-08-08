@@ -11,16 +11,17 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-lg text-base-content/70">
               <p>
-                Jeg er utdannet lydtekniker og er sertifisert tech-nerd. Jobber
+                Jeg er utdannet lydtekniker og er sertifisert tech-nerd 🤓 Jobber
                 i det daglige som lydtekniker i radio, men bruker fritiden min
-                på å utvikle nettsider og digitale løsninger.
+                på å blant annet utvikle nettsider.
               </p>
               <p>
                 Jeg lager skreddersydde løsninger som ikke bare ser bra ut, men
                 også presterer optimalt og er enkle å vedlikeholde for deg som
-                bedrift.
+                bedrift. 
               </p>
               <p>
+                Trenger du en moderne nettside med kontaktskjema, portefølje, blogg eller kundeomtaler?
                 Ta kontakt for å se hvordan jeg kan hjelpe deg med ditt
                 prosjekt!
               </p>

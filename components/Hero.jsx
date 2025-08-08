@@ -137,21 +137,29 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-base-content/80 mb-4">
-             .. og jeg lager moderne nettsider og digitale opplevelser
+            Webutvikling som øker dine kundeforespørsler og bygger tillit online
           </p>
 
           <p className="text-lg mb-8 text-base-content/70 max-w-2xl mx-auto">
-           Webutvikling for håndverkere og små bedrifter som ønsker en enkel og effektiv nettside.
+            Skreddersydde nettsider for håndverkere og små bedrifter. Fra 5.000 NOK - ferdig på 2-3 uker.
           </p>
 
-         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-    <Link
-              href="#projects"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a
+              href="#services"
               className="btn btn-primary btn-lg transition-colors hover:shadow-xl active:shadow-xl hover:shadow-primary/20 active:shadow-primary/20"
             >
-              Se mine prosjekter
-            </Link>
-</div>
+              🚀 Få gratis tilbud på 24 timer
+            </a>
+            <a
+              href="#projects"
+              className="btn btn-outline btn-primary btn-lg"
+            >
+              📈 Se mine resultater
+            </a>
+          </div>
+
+        
 
           <div className="flex justify-center space-x-6">
             <a

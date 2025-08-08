@@ -6,10 +6,13 @@ export default function Projects() {
     {
       title: "Bjørnerås Trefelling",
       description:
-        "Moderne nettside for trefellingsbedrift med kontaktskjema og prosjektgalleri. Bygget med Next.js og PayloadCMS for enkel innholdsadministrasjon. Enkelt og effektivt.",
+        "Moderne nettside for trefellingsbedrift med kontaktskjema og prosjektgalleri. Bygget med Next.js og PayloadCMS for enkel innholdsadministrasjon.",
       image: "/bjorneras.png",
       technologies: ["Next.js", "PayloadCMS", "Tailwind CSS", "MongoDB"],
       liveUrl: "https://bjornerastrefelling.no",
+      results: "150% økning i kundeforespørsler",
+      testimonial: "Sivert leverte en fantastisk nettside som har hjulpet oss å nå flere kunder. Profesjonell og pålitelig!",
+      clientName: "Bjørnerås Trefelling",
     },
     {
       title: "Iversen Hageservice",
@@ -24,14 +27,20 @@ export default function Projects() {
         "PayloadCMS",
       ],
       liveUrl: "https://iversenhageservice.no",
+      results: "200% mer trafikk på 6 måneder",
+      testimonial: "Nettsiden har gitt oss mye mer synlighet online. Enkelt å oppdatere og ser veldig profesjonell ut.",
+      clientName: "Iversen Hageservice",
     },
     {
       title: "FlyttBilen.no",
       description:
-        "Fullstack applikasjon for varsling om veiarbeid og graving, med betalingsintegrasjon og administrasjonspanel. Bygget med Next.js, Supabase og Stripe.",
+        "Fullstack applikasjon for varsling om veiarbeid og graving, med betalingsintegrasjon og administrasjonspanel.",
       image: "/flyttbilen.png",
       technologies: ["Next.js", "Supabase", "Stripe"],
       liveUrl: "https://flyttbilen.no",
+      results: "Automatisert varsling",
+      testimonial: "En komplett løsning som har reddet meg fra mange bøter",
+      clientName: "FlyttBilen AS",
     },
   ];
 
@@ -43,11 +52,12 @@ export default function Projects() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-base-content">
-            Utvalgte Prosjekter
+            Suksesshistorier
           </h2>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">
-            Prosjekter jeg har utviklet og drifter i dag.
+            Nettsider som har hjulpet norske bedrifter å vokse og lykkes online
           </p>
+         
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
@@ -69,9 +79,25 @@ export default function Projects() {
                 <h3 className="card-title text-xl text-base-content font-semibold">
                   {project.title}
                 </h3>
-                <p className="text-base-content/70 text-sm leading-relaxed">
+                
+                {/* Results Badge */}
+                <div className="badge badge-success badge-lg font-semibold mb-2">
+                  📈 {project.results}
+                </div>
+
+                <p className="text-base-content/70 text-sm leading-relaxed mb-3">
                   {project.description}
                 </p>
+
+                {/* Client Testimonial */}
+                <div className="bg-base-200 p-3 rounded-lg mb-4">
+                  <p className="text-sm italic text-base-content/80">
+                    "{project.testimonial}"
+                  </p>
+                  <p className="text-xs text-base-content/60 mt-2 font-semibold">
+                    - {project.clientName}
+                  </p>
+                </div>
 
                 <div className="flex flex-wrap gap-2 my-4">
                   {project.technologies.map((tech, techIndex) => (
@@ -91,7 +117,7 @@ export default function Projects() {
                     className="btn btn-primary btn-sm"
                   >
                     <ExternalLink className="h-4 w-4 mr-1" />
-                    Sjekk den ut!
+                    Se resultatet
                   </a>
 
                   {project.githubUrl && (

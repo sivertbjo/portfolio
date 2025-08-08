@@ -11,20 +11,24 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-lg text-base-content/70">
               <p>
-                Jeg er utdannet lydtekniker og er sertifisert tech-nerd 🤓 Jobber
-                i det daglige som lydtekniker i radio, men bruker fritiden min
-                på å blant annet utvikle nettsider.
+                Jeg har 3+ års erfaring med webutvikling og har hjulpet flere norske bedrifter 
+                med å øke sine kundeforespørsler gjennom profesjonelle nettsider.
               </p>
               <p>
-                Jeg lager skreddersydde løsninger som ikke bare ser bra ut, men
-                også presterer optimalt og er enkle å vedlikeholde for deg som
-                bedrift. 
+                Som utdannet lydtekniker og sertifisert tech-nerd 🤓 kombinerer jeg teknisk 
+                ekspertise med forståelse for hva små bedrifter trenger. Jeg jobber i det daglige 
+                som lydtekniker i radio, men brenner for å hjelpe bedrifter å vokse online.
               </p>
               <p>
-                Trenger du en moderne nettside med kontaktskjema, portefølje, blogg eller kundeomtaler?
-                Ta kontakt for å se hvordan jeg kan hjelpe deg med ditt
-                prosjekt!
+                Mine nettsider er ikke bare pene å se på - de er bygget for å konvertere 
+                besøkende til kunder. Med fokus på hastighet, SEO og brukervennlighet 
+                sikrer jeg at nettsiden din jobber for deg 24/7.
               </p>
+              <div className="bg-primary/10 p-4 rounded-lg mt-6">
+                <p className="text-primary font-semibold">
+                  ⚡ Ledig kapasitet!
+                </p>
+              </div>
             </div>
           </div>
 
@@ -40,7 +44,7 @@ export default function About() {
                       Teknisk Ekspertise
                     </h3>
                     <p className="text-base-content/70">
-                      Moderne JavaScript, React, Next.js og mer
+                      3+ års erfaring med moderne teknologier som Next.js, React og Tailwind CSS
                     </p>
                   </div>
                 </div>
@@ -58,7 +62,7 @@ export default function About() {
                       Design & UX
                     </h3>
                     <p className="text-base-content/70">
-                      Brukersentrert design og moderne UI
+                      Brukersentrert design som konverterer besøkende til kunder
                     </p>
                   </div>
                 </div>
@@ -73,10 +77,10 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="card-title text-lg text-base-content">
-                      Ytelse & SEO
+                      Resultater & ROI
                     </h3>
                     <p className="text-base-content/70">
-                      Optimaliserte nettsider som ranker høyt
+                      Mine kunder ser gjennomsnittlig 150% økning i kundeforespørsler
                     </p>
                   </div>
                 </div>

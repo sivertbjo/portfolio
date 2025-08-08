@@ -74,7 +74,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 bg-neutral text-neutral-content relative overflow-hidden">
+    <section className="py-20 bg-neutral text-neutral-content relative overflow-hidden" id="contact">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Floating Circles */}
@@ -146,7 +146,7 @@ export default function Contact() {
           {/* Animated Title */}
           <div className="relative">
             <h2 className="text-4xl md:text-5xl font-bold animate-fade-in-up">
-              La oss snakke sammen
+              Klar for å øke dine kundeforespørseler?
             </h2>
             <div className="absolute -top-4 -right-4 w-8 h-8 animate-ping">
               <div className="w-full h-full bg-primary/30 rounded-full"></div>
@@ -154,9 +154,14 @@ export default function Contact() {
           </div>
 
           <p className="text-xl text-neutral-content/70 max-w-2xl mx-auto animate-fade-in-up-delayed">
-            Har du et prosjekt i tankene? Send meg en melding, så diskuterer vi
-            hvordan jeg kan hjelpe deg.
+            Få gratis tilbud på 24 timer. Jeg svarer vanligvis innen 2 timer og gir deg en konkret plan for ditt prosjekt.
           </p>
+          
+          <div className="flex justify-center gap-4 text-sm text-neutral-content/60 animate-fade-in-up-delayed">
+            <div>✅ Gratis konsultasjon</div>
+            <div>✅ 30 dagers garanti</div>
+            <div>✅ Ingen forpliktelser</div>
+          </div>
         </div>
 
         {/* Form with Enhanced Animations */}
@@ -265,21 +270,25 @@ export default function Contact() {
                 {/* Button Background Animation */}
                 <div className="absolute inset-0 btn-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                <Send
+                <span
                   className={`w-4 h-4 relative z-10 transition-transform duration-300 ${loading ? "animate-pulse" : "group-hover:translate-x-1"}`}
-                />
+                >🚀</span>
 
                 {loading && (
                   <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white relative z-10"></div>
                 )}
 
                 <span className="relative z-10">
-                  {loading ? "Sender..." : "Send melding"}
+                  {loading ? "Sender..." : "Få gratis tilbud på 24 timer"}
                 </span>
 
                 {/* Success Ripple Effect */}
                 <div className="absolute inset-0 bg-green-500 rounded-md scale-0 opacity-0 animate-success-ripple"></div>
               </button>
+              
+              <div className="text-center text-sm text-neutral-content/60 mt-4">
+                💡 Jeg svarer vanligvis innen 2 timer på hverdager
+              </div>
             </form>
           </div>
         </div>

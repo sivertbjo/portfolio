@@ -4,6 +4,7 @@ import { sendEmail } from "@/utils/actions";
 import { Send } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { TypeAnimation } from "react-type-animation";
 import { z } from "zod";
 
 export default function Contact() {
@@ -145,9 +146,22 @@ export default function Contact() {
         <div className="text-center space-y-4 mb-12">
           {/* Animated Title */}
           <div className="relative">
-            <h2 className="text-4xl md:text-5xl font-bold animate-fade-in-up">
-              Klar for å øke dine kundeforespørsler?
-            </h2>
+            <div className="text-4xl md:text-5xl font-bold animate-fade-in-up">
+              <TypeAnimation
+  sequence={[
+    'Klar for å øke dine kundeforespørsler?',
+    2000,
+    'Klar for en ny nettside?',
+    2000,
+    'Klar for mer trafikk?',
+    2000,
+  ]}
+  wrapper="h2"
+  speed={50}
+  className="text-4xl md:text-5xl font-bold"
+  repeat={Infinity}
+/>
+            </div>
             <div className="absolute -top-4 -right-4 w-8 h-8 animate-ping">
               <div className="w-full h-full bg-primary/30 rounded-full"></div>
             </div>

@@ -147,7 +147,7 @@ export default function Contact() {
           {/* Animated Title */}
           <div className="relative">
             <div className="text-4xl md:text-5xl font-bold animate-fade-in-up">
-              <TypeAnimation
+<TypeAnimation
   sequence={[
     'Klar for å øke dine kundeforespørsler?',
     2000,
@@ -158,7 +158,7 @@ export default function Contact() {
   ]}
   wrapper="h2"
   speed={50}
-  className="text-4xl md:text-5xl font-bold"
+  className="text-4xl md:text-5xl font-bold min-h-[2.5rem] md:min-h-[3rem] flex items-center justify-center"
   repeat={Infinity}
 />
             </div>

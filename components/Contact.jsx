@@ -146,7 +146,7 @@ export default function Contact() {
           {/* Animated Title */}
           <div className="relative">
             <h2 className="text-4xl md:text-5xl font-bold animate-fade-in-up">
-              Klar for å øke dine kundeforespørseler?
+              Klar for å øke dine kundeforespørsler?
             </h2>
             <div className="absolute -top-4 -right-4 w-8 h-8 animate-ping">
               <div className="w-full h-full bg-primary/30 rounded-full"></div>

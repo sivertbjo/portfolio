@@ -158,7 +158,7 @@ export default function Contact() {
   ]}
   wrapper="h2"
   speed={50}
-  className="text-4xl md:text-5xl font-bold min-h-[2.5rem] md:min-h-[3rem] flex items-center justify-center"
+  className="text-4xl md:text-5xl font-bold h-[5rem] md:h-[6rem] flex items-center justify-center text-center leading-tight"
   repeat={Infinity}
 />
             </div>

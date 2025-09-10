@@ -1,41 +1,49 @@
-import { Check, Star, Zap } from "lucide-react";
+import { Check, Star, X } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
       name: "Enkel Bedriftsnettside",
       price: "Fra 5.000 NOK",
-      description: "Perfekt for små bedrifter som ikke trenger å administrere innhold selv og ønsker en enkel nettside",
+      description:
+        "Perfekt for små bedrifter som ikke trenger å administrere innhold selv og ønsker en enkel nettside",
       features: [
         "Responsiv design (mobil og desktop)",
         "Kontaktskjema",
         "SEO-optimalisering",
-        "1 års domene og hosting inkludert",
+        "1 års hosting inkludert",
+      ],
+      nonFeatures: [
+        "Lar deg ikke endre innhold selv - kontakt meg for endringer mot et lite gebyr",
       ],
       popular: false,
       deliveryTime: "2-3 uker",
-      icon: "🌐"
+      icon: "🌐",
     },
     {
       name: "Nettside med CMS",
       price: "Fra 10.000 NOK",
-      description: "For bedrifter som vil administrere eget innhold og ha mer funksjonalitet",
+      description:
+        "For bedrifter som vil administrere eget innhold og ha mer funksjonalitet",
       features: [
         "Alt fra enkel pakke",
         "PayloadCMS for enkel innholdsadministrasjon",
         "Blogg-/nyhetsseksjon om ønskelig",
         "Kundeomtaler",
         "Backup og sikkerhet",
-        "6 måneder gratis vedlikehold"
+        "6 måneder gratis vedlikehold",
       ],
       popular: true,
       deliveryTime: "3-4 uker",
-      icon: "⚡"
-    }
+      icon: "⚡",
+    },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-neutral to-base-200" id="services">
+    <section
+      className="py-20 bg-gradient-to-b from-neutral to-base-200"
+      id="services"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-base-content">
@@ -54,7 +62,7 @@ export default function Services() {
             <div
               key={index}
               className={`card bg-base-100 shadow-xl hover:shadow-2xl transition-all relative ${
-                service.popular ? 'ring-2 ring-primary scale-105' : ''
+                service.popular ? "ring-2 ring-primary scale-105" : ""
               }`}
             >
               {service.popular && (
@@ -86,18 +94,41 @@ export default function Services() {
 
                 <div className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-start space-x-2">
+                    <div
+                      key={featureIndex}
+                      className="flex items-start space-x-2"
+                    >
                       <Check className="h-4 w-4 text-success mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-base-content/80">{feature}</span>
+                      <span className="text-sm text-base-content/80">
+                        {feature}
+                      </span>
                     </div>
                   ))}
+
+                  {service.nonFeatures && (
+                    <>
+                      {service.nonFeatures.map((nonFeature, nfIndex) => (
+                        <div
+                          key={nfIndex}
+                          className="flex items-start space-x-2"
+                        >
+                          <X className="h-4 w-4 text-error mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-base-content/80">
+                            {nonFeature}
+                          </span>
+                        </div>
+                      ))}
+                    </>
+                  )}
                 </div>
 
                 <div className="card-actions justify-center mt-6">
-                  <a 
-                    href="#contact" 
+                  <a
+                    href="#contact"
                     className={`btn w-full ${
-                      service.popular ? 'btn-primary' : 'btn-outline btn-primary'
+                      service.popular
+                        ? "btn-primary"
+                        : "btn-outline btn-primary"
                     }`}
                   >
                     Få gratis tilbud
@@ -127,27 +158,26 @@ export default function Services() {
                 description: "Kartlegging av behov og målsettinger",
               },
               {
-                step: "🎨", 
+                step: "🎨",
                 title: "Design",
                 description: "Mockups og prototyper basert på dine ønsker",
               },
               {
                 step: "⚡",
-                title: "Utvikling", 
+                title: "Utvikling",
                 description: "Koding, testing og optimalisering",
               },
               {
                 step: "🚀",
                 title: "Launch",
                 description: "Publisering og opplæring i administrasjon",
-              }
+              },
             ].map((phase, index) => (
               <div key={index} className="text-center">
                 <div className="relative">
                   <div className="w-16 h-16 bg-secondary/40 text-primary-content rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                     {phase.step}
                   </div>
-                  
                 </div>
                 <h4 className="font-bold text-lg text-base-content mb-2">
                   {phase.title}
@@ -157,9 +187,9 @@ export default function Services() {
                 </p>
 
                 {phase.time && (
-                    <div className="badge badge-outline badge-sm">
-                  {phase.time}
-                </div>
+                  <div className="badge badge-outline badge-sm">
+                    {phase.time}
+                  </div>
                 )}
               </div>
             ))}
@@ -173,24 +203,24 @@ export default function Services() {
               Mine garantier til deg
             </h3>
           </div>
-          
+
           <div className="grid gap-6 md:grid-cols-3">
             {[
               {
                 icon: "🛡️",
                 title: "30 dagers garanti",
-                description: "Ikke fornøyd? Få pengene tilbake."
+                description: "Ikke fornøyd? Få pengene tilbake.",
               },
               {
                 icon: "🔧",
                 title: "Gratis endringer",
-                description: "Første måneden etter lansering."
+                description: "Første måneden etter lansering.",
               },
               {
                 icon: "💯",
                 title: "100% fornøyd eller pengene tilbake",
-                description: "Vi jobber til du er helt fornøyd."
-              }
+                description: "Vi jobber til du er helt fornøyd.",
+              },
             ].map((guarantee, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl mb-3">{guarantee.icon}</div>

@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { ArrowDown, Github, Linkedin } from "lucide-react"
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import heroImage from "@/public/sivert.png"
-import Link from "next/link"
-import AnimatedBackground from "./animated-background"
+import { ArrowDown, Github, Linkedin } from "lucide-react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import heroImage from "@/public/sivert-b2.webp";
+import Link from "next/link";
+import AnimatedBackground from "./animated-background";
 
 export default function Hero() {
-  const [showParticles, setShowParticles] = useState(false)
+  const [showParticles, setShowParticles] = useState(false);
 
   useEffect(() => {
-    setShowParticles(true)
-  }, [])
+    setShowParticles(true);
+  }, []);
 
   // Pre-calculate particle positions only on client
   const particles = showParticles
@@ -22,7 +22,7 @@ export default function Hero() {
         left: `${30 + Math.random() * 40}%`,
         delay: `${i * 0.3}s`,
       }))
-    : []
+    : [];
 
   return (
     <div className="hero min-h-screen bg-gradient-to-br from-base-300 via-base-100 to-base-300 relative overflow-hidden">
@@ -40,7 +40,10 @@ export default function Hero() {
 
                   {/* Cracked screen effect */}
                   <div className="absolute inset-0 pointer-events-none">
-                    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
+                    <svg
+                      className="absolute inset-0 w-full h-full"
+                      viewBox="0 0 200 200"
+                    >
                       <path
                         d="M100,100 L120,80 L140,85 L160,70"
                         stroke="rgba(255,255,255,0.3)"
@@ -73,12 +76,13 @@ export default function Hero() {
                       src={heroImage || "/placeholder.svg"}
                       alt="Sivert Bjørnerås"
                       placeholder="blur"
-                      width={192}
-                      height={192}
-                      className="object-cover relative z-10 hover:scale-110 transition-transform duration-500"
+                      width={200}
+                      height={200}
+                      className="object-cover relative z-10 hover:scale-110 transition-transform duration-500 rounded-2xl"
                       priority
                       style={{
-                        filter: "drop-shadow(0 0 20px rgba(99, 102, 241, 0.6)) brightness(1.1)",
+                        filter:
+                          "drop-shadow(0 0 20px rgba(99, 102, 241, 0.6)) brightness(1.1)",
                       }}
                     />
                   </div>
@@ -124,7 +128,7 @@ export default function Hero() {
             </div>
           </div>
 
-           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-base-content">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-base-content">
             Hei, jeg er{" "}
             <span className="font-extrabold relative group">
               <span className="absolute inset-0 bg-gradient-to-r from-primary via-info via-error via-warning via-success via-primary to-purple-500 bg-[length:400%] opacity-0 group-hover:opacity-100 group-active:opacity-100 animate-gradient-x bg-clip-text text-transparent transition-all duration-300">
@@ -141,7 +145,8 @@ export default function Hero() {
           </p>
 
           <p className="text-lg mb-8 text-base-content/70 max-w-2xl mx-auto">
-            Skreddersydde nettsider for håndverkere og små bedrifter. Fra 5.000 NOK - ferdig på 2-3 uker.
+            Skreddersydde nettsider for håndverkere og små bedrifter. Fra 5.000
+            NOK - ferdig på 2-3 uker.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -151,15 +156,10 @@ export default function Hero() {
             >
               🚀 Få gratis tilbud på 24 timer
             </a>
-            <a
-              href="#projects"
-              className="btn btn-outline btn-primary btn-lg"
-            >
+            <a href="#projects" className="btn btn-outline btn-primary btn-lg">
               📈 Se mine resultater
             </a>
           </div>
-
-        
 
           <div className="flex justify-center space-x-6">
             <a
@@ -184,5 +184,5 @@ export default function Hero() {
         <ArrowDown className="h-6 w-6 text-base-content/40" />
       </div>
     </div>
-  )
+  );
 }

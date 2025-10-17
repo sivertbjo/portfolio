@@ -1,10 +1,9 @@
 "use client";
 
-import { ArrowDown, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import heroImage from "@/public/sivert-b2.webp";
-import Link from "next/link";
 import AnimatedBackground from "./animated-background";
 
 export default function Hero() {
@@ -141,25 +140,9 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-base-content/80 mb-4">
-            Norsk lyd- og systemtekniker.
+            Lyd- og systemtekniker @ P4 Radio Hele Norge
           </p>
 
-          {/* <p className="text-lg mb-8 text-base-content/70 max-w-2xl mx-auto">
-            Skreddersydde nettsider for håndverkere og små bedrifter. Fra 5.000
-            NOK - ferdig på 2-3 uker.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a
-              href="#services"
-              className="btn btn-primary btn-lg transition-colors hover:shadow-xl active:shadow-xl hover:shadow-primary/20 active:shadow-primary/20"
-            >
-              🚀 Få gratis tilbud på 24 timer
-            </a>
-            <a href="#projects" className="btn btn-outline btn-primary btn-lg">
-              📈 Se mine resultater
-            </a>
-          </div>  */}
 
           <div className="flex justify-center space-x-6">
             <a
@@ -179,12 +162,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-{/*
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-base-content/40" />
-      </div>
-*/}
     </div>
   );
 }

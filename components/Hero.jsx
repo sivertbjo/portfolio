@@ -141,10 +141,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-base-content/80 mb-4">
-            Webutvikling som øker dine kundeforespørsler og bygger tillit online
+            Norsk lyd- og systemtekniker.
           </p>
 
-          <p className="text-lg mb-8 text-base-content/70 max-w-2xl mx-auto">
+          {/* <p className="text-lg mb-8 text-base-content/70 max-w-2xl mx-auto">
             Skreddersydde nettsider for håndverkere og små bedrifter. Fra 5.000
             NOK - ferdig på 2-3 uker.
           </p>
@@ -159,7 +159,7 @@ export default function Hero() {
             <a href="#projects" className="btn btn-outline btn-primary btn-lg">
               📈 Se mine resultater
             </a>
-          </div>
+          </div>  */}
 
           <div className="flex justify-center space-x-6">
             <a
@@ -180,9 +180,11 @@ export default function Hero() {
         </div>
       </div>
 
+{/*
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-base-content/40" />
       </div>
+*/}
     </div>
   );
 }

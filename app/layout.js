@@ -5,9 +5,9 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sivert Bjørnerås - Webutvikler",
+  title: "Sivert Bjørnerås",
   description:
-    "Moderne nettsider og digitale løsninger for håndverkere og små bedrifter",
+    "Norsk lyd- og systemtekniker i P4 Radio Hele Norge. Spesialisert innen lydteknikk, it-drift, video og kringkastingsteknologi.",
 };
 
 export default function RootLayout({ children }) {
